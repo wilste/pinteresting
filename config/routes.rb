@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  #get 'pages/home'  <-- Old route created during generate
+  root "pages#home"  #This is the root_path
+  get "about" => "pages#about"  #Creates about_path
+  get "test" => "pages#test"
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
