@@ -76,4 +76,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  #Configuration for Devise Gem for Heroku
+  config.action_mailer.default_url_options = { :host => 'bingley-pinteresting.herokuapp.com' }
 end

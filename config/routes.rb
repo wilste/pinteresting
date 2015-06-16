@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   #get 'pages/home'  <-- Old route created during generate
   root "pages#home"  #This is the root_path
   get "about" => "pages#about"  #Creates about_path
